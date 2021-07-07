@@ -21,8 +21,8 @@ class DevicesLocations extends Migration
 			$table->text('model')->nullable();
 			$table->text('battery')->nullable();
 			$table->text('uuid')->nullable();
-            $table->text('lat')->default(0.00);
-            $table->text('long')->default(0.00);
+            $table->text('lat')->nullable();
+            $table->text('long')->nullable();
 		});
     }
 
