@@ -10,5 +10,5 @@ class Device extends Model
     use HasFactory;
 	protected $table = 'devices';
 	public $timestamps = true;
-	protected $fillable = array('version','brand','model','battery','uuid','lat','long');
+	protected $fillable = array('version','brand','model','battery','uuid','latitude','longitude');
 }
