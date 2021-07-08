@@ -122,6 +122,7 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
+    
 
     /*
     |--------------------------------------------------------------------------
@@ -139,6 +140,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+        Stevebauman\Location\LocationServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -189,7 +191,7 @@ return [
     */
 
     'aliases' => [
-
+        'Location' => 'Stevebauman\Location\Facades\Location',
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
